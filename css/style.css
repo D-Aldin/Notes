@@ -1,6 +1,13 @@
+@font-face {
+    font-family: myFont;
+    src: url(../assets/fonts/raleway/Raleway-Light.ttf);
+  }
+  
+
 body {
     margin: 0 auto;
     padding: 0;
+    font-family: myFont;
 }
 
 header {
@@ -20,7 +27,16 @@ header {
 
 main {
     padding: 0px 160px;
-    
+   
+}
+
+.note_image {
+    display: block;
+    margin: auto;
+    text-align:center;
+    width: 320px;
+    margin-top: 100px;
+
 }
 
 button {
@@ -31,6 +47,7 @@ button {
     border: none;
     border-radius: 12px;
     background-color: #81b50d;
+    cursor: pointer;
     
     
 }

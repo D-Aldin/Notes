@@ -1,5 +1,7 @@
 let counter = 0;
-
+const refButton = document.querySelector("#add").addEventListener("click", () => {
+  document.querySelector(".note_image").style.display = 'none';
+});
 
 function createBox(idNumber) {
   return `<div onclick="openBox(this)" id=${idNumber} class="note_boxes">
@@ -72,5 +74,12 @@ function saveNotes(event) {
   
   event.innerHTML = event.value;
   saveToLocalStorage()
+}
+
+function hideImage() {
+
+  if (localStorage.length > 0) {
+    document.querySelector(".note_image").style.display = 'none'; 
+  }
 }
 

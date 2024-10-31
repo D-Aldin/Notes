@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Notizblock</title>
   </head>
-  <body onload="loadFromLocalStorage()">
+  <body onload="loadFromLocalStorage(); hideImage(); logLog()">
     <header>
       <button id="add" onclick="addBox()">ADD</button>
       <section class="search_section">
@@ -19,7 +19,9 @@
     </header>
 
     <main>
+        
       <h1>Notes</h1>
+      <img class="note_image" src="./assets/img/paper.png" alt="note with pencil">
       <section class="note_box_section"></section>
     </main>
   </body>
