@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="de-DE">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./scritps/script.js" defer></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Notizblock</title>
-    
-</head>
-<body onload="loadBoxes()">
+  </head>
+  <body onload="loadFromLocalStorage()">
     <header>
-        <h1>NotizBlock</h1>
-        <button id="add" onclick="addBox()" >ADD</button>
+      <button id="add" onclick="addBox()">ADD</button>
+      <section class="search_section">
+        <form action="">
+          <label for="search"></label>
+          <input type="search" id="search" />
+        </form>
+      </section>
     </header>
 
     <main>
-        <section class="search_section">
-            <form action="">
-                <label for="search"></label>
-                <input type="search" id="search">
-            </form>
-        </section>
-        <section class="note_box_section">
-
-    
-        </section>
+      <h1>Notes</h1>
+      <section class="note_box_section"></section>
     </main>
-</body>
+  </body>
 </html>
